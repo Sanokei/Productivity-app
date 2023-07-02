@@ -40,7 +40,7 @@ namespace ProductivityApp
                     TimersManager.SetPaused(timers[0].Timer, false);
                 }
                 float timeRemaining = TimersManager.RemainingTime(timers[0].Timer);
-                text.text = $"{(int)timeRemaining/360:00}:{(int)timeRemaining/60:00}:{(int)timeRemaining%60:00}";
+                text.text = $"{(int)timeRemaining/3600:00}:{(int)timeRemaining/60:00}:{(int)timeRemaining%60:00}";
             }
             if(timers.Count == 0 && text.text != "00:00:00")
             {

@@ -21,7 +21,7 @@ namespace ProductivityApp
             TimersManager.SetPaused(Timer, true);
             TaskText.text = task;
             float timeRemaining = TimersManager.RemainingTime(Timer);
-            Time.text = $"{(int)timeRemaining/360:00}:{(int)timeRemaining/60:00}:{(int)timeRemaining%60:00}";
+            Time.text = $"{(int)timeRemaining/3600:00}:{(int)timeRemaining/60:00}:{(int)timeRemaining%60:00}";
         }
         public void Timer()
         {
