@@ -30,7 +30,6 @@ public class SceneTimelineManager : MonoBehaviour //TODO: this is a shit solutio
     void AddOnEnterString(string name)
     {
         OnEnterString += name;
-        Debug.Log($"{name}\t{OnEnterString}");
         CheckStrings(OnEnter, OnEnterString);
     }
     void AddOnExitString(string name)

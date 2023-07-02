@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector] public bool canMove = true;
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
         if(Instance)
             Destroy(this);
         else

@@ -5,12 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScenes : MonoBehaviour
 {
-    void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+    string Name;
     public void LoadSceneMode(string name)
     {
+        this.Name = name;
         SceneManager.LoadScene(name);
     }
 }
