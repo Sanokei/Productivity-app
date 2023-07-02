@@ -13,12 +13,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float lookXLimit = 45.0f;
     [SerializeField] private CharacterController characterController;
     public Camera playerCamera;
+    public static PlayerMovement Instance;
     
     // private
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
     [HideInInspector] public bool canMove = true;
-
+    void Awake()
+    {
+        if(Instance)
+            Destroy(this);
+        else
+            Instance = this;
+    }
     void Start()
     {
         characterController = characterController ?? GetComponent<CharacterController>();
@@ -73,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
         //     moveDirection.y -= gravity * Time.deltaTime;
         // }
 
+        // Already checks if canMove
         // Move the controller
         characterController.Move(moveDirection * Time.deltaTime);
 
