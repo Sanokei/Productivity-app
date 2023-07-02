@@ -14,12 +14,16 @@ public class ActivateInputFieldEventHandler : MonoBehaviour
     }
     void OnEnable()
     {
-        ProductivityManager.ActivateInputFieldEvent += (x) => input.enabled = x;
+        ProductivityManager.ActivateInputFieldEvent += ActivateInputField;
     }
 
     void OnDisable()
     {
-        ProductivityManager.ActivateInputFieldEvent -= (x) => input.enabled = x;
+        ProductivityManager.ActivateInputFieldEvent -= ActivateInputField;
     }
 
+    void ActivateInputField(bool x)
+    {
+        input.enabled = x;
+    }
 }

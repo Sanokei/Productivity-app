@@ -5,10 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float walkingSpeed = 7.5f;
+    [SerializeField] private float walkingSpeed = 4.5f;
     [SerializeField] private float runningSpeed = 11.5f;
     [SerializeField] private float jumpSpeed = 8.0f;
-    [SerializeField] private float gravity = 20.0f;
+    [SerializeField] private float gravity = 500.0f;
     [SerializeField] private float lookSpeed = 2.0f;
     [SerializeField] private float lookXLimit = 45.0f;
     [SerializeField] private CharacterController characterController;
@@ -72,13 +72,13 @@ public class PlayerMovement : MonoBehaviour
         //     moveDirection.y = movementDirectionY;
         // }
 
-        // // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
-        // // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
-        // // as an acceleration (ms^-2)
-        // if (!characterController.isGrounded)
-        // {
-        //     moveDirection.y -= gravity * Time.deltaTime;
-        // }
+        // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
+        // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
+        // as an acceleration (ms^-2)
+        if (!characterController.isGrounded)
+        {
+            moveDirection.y -= gravity * Time.deltaTime;
+        }
 
         // Already checks if canMove
         // Move the controller
