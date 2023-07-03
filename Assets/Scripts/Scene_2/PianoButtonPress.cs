@@ -18,7 +18,7 @@ public class PianoButtonPress : MonoBehaviour
     void Update()
     {
             
-        if (Physics.Raycast(PlayerMovement.Instance.playerCamera.ScreenPointToRay(Input.mousePosition), out hitData, 1000) && hitData.transform.tag == "PianoButton")
+        if (Physics.Raycast(PlayerMovement.Instance.playerCamera.ScreenPointToRay(Input.mousePosition), out hitData, 5) && hitData.transform.tag == "PianoButton")
         {
             if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E))
             {
@@ -26,21 +26,21 @@ public class PianoButtonPress : MonoBehaviour
                 anim.Play();
                 _buttonPressed++;
 
-                if(_buttonPressed < 5)
+                if(_buttonPressed < 9)
                 {
                     Cheer.Play();
                 }
 
-                if(_buttonPressed >= 5)
+                if(_buttonPressed >= 9)
                 {
                     Boo.Play();
                 }
 
-                if(_buttonPressed == 2)
+                if(_buttonPressed == 4)
                 {
                     PressTwice.Play();
                 }
-                if(_buttonPressed == 5)
+                if(_buttonPressed == 9)
                 {
                     PressFive.Play();
                 }

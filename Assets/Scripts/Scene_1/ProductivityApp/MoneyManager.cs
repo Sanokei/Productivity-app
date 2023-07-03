@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using ProductivityApp;
 using TMPro;
 
 public class MoneyManager : MonoBehaviour
 {
     [SerializeField] TMP_Text MoneyText;
+    [SerializeField] GameObject wallTV;
     float _TotalMoney;
+    [SerializeField] PlayableDirector MoneyGlitch;
+    bool _MoneyGlitchBool = false;
     public static MoneyManager Instance;
     // Start is called before the first frame update
     void Awake()
@@ -32,5 +36,19 @@ public class MoneyManager : MonoBehaviour
     {
         _TotalMoney += timer.Time / 1000f;
         MoneyText.text = $"${_TotalMoney}";
+    }
+
+    void Update()
+    {
+        if(_TotalMoney > 10f && !_MoneyGlitchBool)
+        {
+            _MoneyGlitchBool = true;
+            MoneyGlitch.Play();
+        }
+    }
+
+    public void TurnMoneyWallTVOff()
+    {
+        wallTV.SetActive(false);
     }
 }

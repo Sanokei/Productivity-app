@@ -37,7 +37,7 @@ namespace ProductivityApp
             if(_ProductivityAppActive)
                 ProductivityAppActiveEvent?.Invoke();
                 
-            if (Physics.Raycast(PlayerMovement.Instance.playerCamera.ScreenPointToRay(Input.mousePosition), out hitData, 1000) && hitData.transform.tag == "ProductivityApp")
+            if (Physics.Raycast(PlayerMovement.Instance.playerCamera.ScreenPointToRay(Input.mousePosition), out hitData, 5) && hitData.transform.tag == "ProductivityApp")
             {
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hitData.distance, Color.yellow);
                 if(Input.GetMouseButtonDown(0))
