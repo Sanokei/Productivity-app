@@ -57,9 +57,7 @@ MonoBehaviour:
     IsMethodWithParam: 1
     InvokeEventsInEditMode: 0
     TargetObject: {fileID: 0}
-    ArgValue: The app wasn't cutting it to make you feel productive huh. I'm not
-      blaming you, I'm not a guru telling you how to be productive, but I can't stand
-      timers either. I created that to get the lowest demonoinator of people.
+    ArgValue: 
 --- !u!114 &913877211303731054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -378,7 +376,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TimelineEventClip
   - m_Version: 1
-    m_Start: 17.5
+    m_Start: 25.183333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 4952360913596303788}
     m_Duration: 4.966666666666667
@@ -447,10 +445,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TimelineEventClip
   - m_Version: 1
-    m_Start: 22.46666666666668
+    m_Start: 30.150000000000038
     m_ClipIn: 0
     m_Asset: {fileID: 9136044082964342550}
-    m_Duration: 0.9833333333333307
+    m_Duration: 6.349999999999966
     m_TimeScale: 1
     m_ParentTrack: {fileID: 1126545961319781028}
     m_EaseInDuration: 0
@@ -580,7 +578,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 23.45
+    m_Start: 31.133333333333372
     m_ClipIn: 0
     m_Asset: {fileID: 3011440781025320700}
     m_Duration: 16.01666666666667

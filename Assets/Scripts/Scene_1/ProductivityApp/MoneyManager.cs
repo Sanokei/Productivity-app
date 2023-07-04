@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using ProductivityApp;
 using TMPro;
+using System.Globalization;
 
 public class MoneyManager : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class MoneyManager : MonoBehaviour
     void AddMoney(ProductivityTimer timer)
     {
         _TotalMoney += timer.Time / 1000f;
-        MoneyText.text = $"${_TotalMoney}";
+        MoneyText.text = $"{_TotalMoney.ToString("C", CultureInfo.CreateSpecificCulture("en-us"))}";
     }
 
     void Update()

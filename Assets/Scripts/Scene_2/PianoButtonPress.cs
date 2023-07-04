@@ -5,6 +5,7 @@ using UnityEngine.Playables;
 
 public class PianoButtonPress : MonoBehaviour
 {
+    [SerializeField] Camera _Camera;
     [SerializeField] AnimationClip ButtonPress;
     [SerializeField] Animation anim;
     [SerializeField] PlayableDirector PressTwice;
@@ -18,29 +19,31 @@ public class PianoButtonPress : MonoBehaviour
     void Update()
     {
             
-        if (Physics.Raycast(PlayerMovement.Instance.playerCamera.ScreenPointToRay(Input.mousePosition), out hitData, 5) && hitData.transform.tag == "PianoButton")
+        if (Physics.Raycast(_Camera.ScreenPointToRay(Input.mousePosition), out hitData, 5) && hitData.transform.tag == "PianoButton")
         {
             if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E))
             {
                 anim.clip = ButtonPress;
                 anim.Play();
                 _buttonPressed++;
-
-                if(_buttonPressed < 9)
+                Debug.Log(_buttonPressed);
+                int dialog1 = 10;
+                int dialog2 = 45;
+                if(_buttonPressed < dialog2)
                 {
                     Cheer.Play();
                 }
 
-                if(_buttonPressed >= 9)
+                if(_buttonPressed >= dialog2)
                 {
                     Boo.Play();
                 }
 
-                if(_buttonPressed == 4)
+                if(_buttonPressed == dialog1)
                 {
                     PressTwice.Play();
                 }
-                if(_buttonPressed == 9)
+                if(_buttonPressed == dialog2 + 3)
                 {
                     PressFive.Play();
                 }

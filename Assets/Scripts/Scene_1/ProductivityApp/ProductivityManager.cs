@@ -18,6 +18,7 @@ namespace ProductivityApp
 
         [SerializeField] TMP_InputField taskDesc;
         [SerializeField] Slider timeSlider;
+        [SerializeField] Camera _Camera;
 
         // TODO: this flag needs to be delt with before it gets ugly ngl
         private bool _ProductivityAppActive = false; // Bad practice.. oops too bad :P
@@ -37,7 +38,7 @@ namespace ProductivityApp
             if(_ProductivityAppActive)
                 ProductivityAppActiveEvent?.Invoke();
                 
-            if (Physics.Raycast(PlayerMovement.Instance.playerCamera.ScreenPointToRay(Input.mousePosition), out hitData, 5) && hitData.transform.tag == "ProductivityApp")
+            if (Physics.Raycast(_Camera.ScreenPointToRay(Input.mousePosition), out hitData, 5) && hitData.transform.tag == "ProductivityApp")
             {
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hitData.distance, Color.yellow);
                 if(Input.GetMouseButtonDown(0))

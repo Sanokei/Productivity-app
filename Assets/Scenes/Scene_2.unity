@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: f266751c8e6b1d24e9fe1187e6f0d599, type: 2}
   m_LightingSettings: {fileID: 286419051}
 --- !u!196 &4
 NavMeshSettings:
@@ -530,7 +530,7 @@ LightingSettings:
   m_RealtimeEnvironmentLighting: 1
   m_BounceScale: 1
   m_AlbedoBoost: 1
-  m_IndirectOutputScale: 1
+  m_IndirectOutputScale: 0
   m_UsingShadowmask: 1
   m_BakeBackend: 1
   m_LightmapMaxSize: 1024
@@ -803,12 +803,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f86dd839911aa4cae4d0808e94b7e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 4.33
+  walkingSpeed: 4.5
   runningSpeed: 11.5
   jumpSpeed: 8
   gravity: 500
   lookSpeed: 2
-  lookXLimit: 90
+  lookXLimit: 45
   characterController: {fileID: 559658297}
   playerCamera: {fileID: 1874073333}
   canMove: 1
@@ -1645,6 +1645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e1ab796901c00c4ba1869af6517043f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Camera: {fileID: 1874073333}
   ButtonPress: {fileID: 7400000, guid: db7cfc03c34058d41b8a20ebb9c64ff8, type: 2}
   anim: {fileID: 469613587}
   PressTwice: {fileID: 773966580}
