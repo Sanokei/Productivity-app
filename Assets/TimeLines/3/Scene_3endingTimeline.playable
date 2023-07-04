@@ -703,7 +703,7 @@ MonoBehaviour:
     IsMethodWithParam: 1
     InvokeEventsInEditMode: 0
     TargetObject: {fileID: 0}
-    ArgValue: 
+    ArgValue: Scene_4
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
