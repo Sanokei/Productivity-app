@@ -36,6 +36,7 @@ public class PianoButtonPress : MonoBehaviour
 
                 if(_buttonPressed >= dialog2)
                 {
+                    Cheer?.Stop();
                     Boo.Play();
                 }
 

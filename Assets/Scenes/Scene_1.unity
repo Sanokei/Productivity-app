@@ -3478,6 +3478,8 @@ PlayableDirector:
     value: {fileID: 636346396}
   - key: {fileID: 1227176496767144298, guid: 1e5a4d0777caf874bb5df5c2396fe883, type: 2}
     value: {fileID: 1304097763}
+  - key: {fileID: -1347078862544250525, guid: 1e5a4d0777caf874bb5df5c2396fe883, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &482330616
@@ -4173,8 +4175,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.6291513, y: 5.1660223, z: 9.76652}
-  m_Center: {x: 1.8145761, y: 2.0830112, z: -13.195472}
+  m_Size: {x: 14.394471, y: 5.1660223, z: 15.742264}
+  m_Center: {x: -3.0680852, y: 2.0830112, z: -16.183342}
 --- !u!114 &574998395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7621,6 +7623,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 1126545961319781028, guid: de7dafa7621d13c49ae5b66f179e5086, type: 2}
     value: {fileID: 636346396}
+  - key: {fileID: -2449583579593817153, guid: de7dafa7621d13c49ae5b66f179e5086, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 6d2fe88fbc99cc34082b6319bfdb769f: {fileID: 2114149778}
@@ -8486,6 +8490,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 3334837695701746061, guid: b91f2595e7aabfa4ba12dd2ab5c7e0f6, type: 2}
     value: {fileID: 636346396}
+  - key: {fileID: -5004229535259238464, guid: b91f2595e7aabfa4ba12dd2ab5c7e0f6, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - ad6ea32b5e8a96940bb8ec61d0766166: {fileID: 2114149778}
@@ -16082,7 +16088,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 02e07a6c547337e41a1ed51cb681130d, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 0
   m_InitialTime: 0
@@ -18292,6 +18298,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -6270579095188993839, guid: a0c1ec342a726e44987aaf77a792b523, type: 2}
     value: {fileID: 636346396}
+  - key: {fileID: -7227773324422613577, guid: a0c1ec342a726e44987aaf77a792b523, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2097405990

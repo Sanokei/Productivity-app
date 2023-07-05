@@ -214,6 +214,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -6038204797724620157, guid: 890ba8102cd3bfc4ebd8936432dda11c, type: 2}
     value: {fileID: 1658426527}
+  - key: {fileID: -3099921519762883004, guid: 890ba8102cd3bfc4ebd8936432dda11c, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &126057248
@@ -1036,6 +1038,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 528596827677485589, guid: bf013f45e52d35f4bb35fc0b105d1a9a, type: 2}
     value: {fileID: 1658426527}
+  - key: {fileID: 998293873975029348, guid: bf013f45e52d35f4bb35fc0b105d1a9a, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &725350839
@@ -1159,6 +1163,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -8368810641437508216, guid: aa6be77a6e49c4f44a370df68e4a831c, type: 2}
     value: {fileID: 6245192705459251881}
+  - key: {fileID: 2347594541679510589, guid: aa6be77a6e49c4f44a370df68e4a831c, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &932209473
@@ -1363,6 +1369,8 @@ PlayableDirector:
     value: {fileID: 6245192705459251881}
   - key: {fileID: 2078234329912985138, guid: c389e7b24d3655d45ab09be5bce4b132, type: 2}
     value: {fileID: 1462626320}
+  - key: {fileID: 3022941312342725514, guid: c389e7b24d3655d45ab09be5bce4b132, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1074526805
@@ -1663,7 +1671,7 @@ GameObject:
   - component: {fileID: 1428474984}
   - component: {fileID: 1428474985}
   m_Layer: 0
-  m_Name: Master
+  m_Name: starter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1701,6 +1709,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -6823594544210455622, guid: 84794a7e3f271bb45b8733c2cdf98ba5, type: 2}
     value: {fileID: 6245192705459251881}
+  - key: {fileID: 7069898249024411764, guid: 84794a7e3f271bb45b8733c2cdf98ba5, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1462626320
