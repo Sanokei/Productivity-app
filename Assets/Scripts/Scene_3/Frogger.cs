@@ -30,6 +30,7 @@ public class Frogger : MonoBehaviour
     void Start()
     {
         playCurrentTimeline(Dialogue[0]);
+        
     }
 
     void OnEnter(string name)

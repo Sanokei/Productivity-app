@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Timers;
 using TMPro;
+using System;
 
 namespace ProductivityApp
 {
@@ -40,7 +41,12 @@ namespace ProductivityApp
                     TimersManager.SetPaused(timers[0].Timer, false);
                 }
                 float timeRemaining = TimersManager.RemainingTime(timers[0].Timer);
-                text.text = $"{(int)timeRemaining/3600:00}:{(int)timeRemaining/60:00}:{(int)timeRemaining%60:00}";
+                TimeSpan t = TimeSpan.FromSeconds( timeRemaining );
+                text.text = string.Format("{0:D2}h:{1:D2}m:{2:D2}s", 
+                        t.Hours, 
+                        t.Minutes, 
+                        t.Seconds
+                        );
             }
             if(timers.Count == 0 && text.text != "00:00:00")
             {
